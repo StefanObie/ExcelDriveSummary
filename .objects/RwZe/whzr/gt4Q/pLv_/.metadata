@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Get Text 'R2600.06 Qualifying'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "pLv_152vlU22X9v-sqauDA",
+  "Reference": "5EtTDp5sBU-4_8FuQu3NBQ/pLv_152vlU22X9v-sqauDA",
+  "ParentRef": "5EtTDp5sBU-4_8FuQu3NBQ/gt4QuzH7iUmTYOwXbzOHqg",
+  "Created": "2024-08-05T12:12:21.9141865Z",
+  "Updated": "2024-08-05T12:12:21.9141865Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

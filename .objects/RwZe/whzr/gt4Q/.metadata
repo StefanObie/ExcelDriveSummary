@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Vitality Drive Dashboard - Anglo Medical",
+  "Type": "Screen",
+  "Id": "gt4QuzH7iUmTYOwXbzOHqg",
+  "Reference": "5EtTDp5sBU-4_8FuQu3NBQ/gt4QuzH7iUmTYOwXbzOHqg",
+  "ParentRef": "5EtTDp5sBU-4_8FuQu3NBQ/whzrHDMFeEuJdBmfHNba6g",
+  "Created": "2024-08-05T12:12:21.5337546Z",
+  "Updated": "2024-08-05T12:12:21.5337546Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

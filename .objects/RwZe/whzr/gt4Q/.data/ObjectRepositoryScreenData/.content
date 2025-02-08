@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="ca-nm2x0YkOeOcy51APjtQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-8, -8, 1382, 736" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIKSURBVDhPbVPPSxZRFJ1aBAW1biNBbVq3KRKhdm0CF0lQ0LvPoJX/gRmDifXNe0/LCBeCm3YShBTxzYw/EkSkRISEQBB0IdEiNIogir7OefNmvtG8cJj749z37r3vTnRQphu9J3Mjt1KjhzInjwnq9DEWaIcLSFcyp57lVpLMqkngY2ZlPTPqReb0U/ifkxPo+yU3ug8JD5CwALQC3gPzNXs5t+ohuSGtkNTpy6mRGIS9kpxa+fx27PapqbjnGOxPpR+XfM+MDDLHJy+N9BwvytZzbZJe9V8ni9Cn9/kII++Yw9wIN19HsFEFrZrgwey59LH3Vis6wqQ2TzeYC6IMwDEeAn+BLyj/PA9JjTIgWuozo71nEdsB/gTuOHMjkB8Vpcpa7uQSvl+BndlEnWMiBf12wLfF/puJdEFfYA5z6wesvI7vnWgm+gL0Xfi2Z+3dM/OJnIa9AfxsujtX/cz4OuUBUKoW0OurOI6PYnEuwv4GbALrwK+ZEbnm52BlCqi1cGCI7JtlZ4nqhP0DZf/GTd2+FW5n4FVDZEkgjKVW5VXQiGMl3Dr0fzO8wHAZ909ePqM/mYtk9X0EOcBwg7zh7vsLjLys+fdgx9UilcL1zJ3qB6G2uvgXjPrQtv30B/5b5VL4RKmT0WImagIJKwWo+zk9ISfQDxc+Jdq5wTJ934AvGT7GAi1IFP0DHZbYsXNGtEcAAAAASUVORK5CYII=" Selector="&lt;html app='msedge.exe' title='Vitality Drive Dashboard - Anglo Medical Scheme' /&gt;" Title="Vitality Drive Dashboard - Anglo Medical Scheme" Url="https://www.discovery.co.za/portal/car-and-home-insurance/vitality-drive-dashboard">
+      <imageRef attrName="InformativeScreenshot" originalValue="7ad0e3fe3f186f5a4518cb60a144c1ad.jpg" xmlns="">0k-IfUDp4HEmIfNgk82_4-A</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Zxafx9CQJ0S2RtJjLMVXVQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.discovery.co.za/portal/car-and-home-insurance/vitality-drive-dashboard" CVScreenId="6ff66601-11f6-4251-8724-bca7e0cab17f" CvTextArea="194, 402, 217, 20" CvType="AnyWordGroup" DesignTimeRectangle="195, 296, 216, 30" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='appIFrameObj' tag='IFRAME' /&gt;&lt;webctrl parentid='runningman' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl id='appIFrameObj' tag='IFRAME' /&gt;&lt;webctrl parentid='runningman' tag='P' type='' class='subtitle font-semibold mb-0' /&gt;" Guid="b061e665-3145-42df-b4c2-b63aa0a2cf2d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Vitality Drive Dashboard - Anglo Medical Scheme' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="145, 296, 266, 57" FullSelectorArgument="&lt;webctrl id='appIFrameObj' tag='IFRAME' /&gt;&lt;webctrl class='card-nav-content' parentid='runningman' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='appIFrameObj' tag='IFRAME' /&gt;&lt;webctrl class='card-nav-content' parentid='runningman' tag='DIV' type='' aaname='                                                                                                                                                                                               ' check:innerText='*Qualifying spend&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;Qualifying spend' /&gt;" Guid="cc18c7cd-8b90-4464-949f-10a87c0c6397" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="32cabb2cf3f6de6379cfd94c05cfe0a2.png" xmlns="">0TlnI02OGRUG2l5RlkU5ULw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

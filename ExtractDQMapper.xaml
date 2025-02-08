@@ -1,0 +1,321 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ExtractDQMapper" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="io_drive_data" Type="InOutArgument(sd:DataTable)" />
+    <x:Property Name="in_current_user" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>629,2021</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ExtractDQMapper_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>Microsoft.Office.Interop.Word</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>Microsoft.Office.Interop.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ExtractDQMapper" sap:VirtualizedContainerService.HintSize="672,2435" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <If Condition="[in_current_user = &quot;Derrick&quot;]" sap:VirtualizedContainerService.HintSize="570,2412" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Sequence DisplayName="Then - Derrick in Data Table" sap:VirtualizedContainerService.HintSize="536,2226" sap2010:WorkflowViewState.IdRef="Sequence_18">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="502,173" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Trace" Message="[&quot;Start - Extract Distance from Main DQ Mapper&quot;]" />
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Track your vehicle in real-time with DQ Mapper - Anglo Medical Scheme" sap:VirtualizedContainerService.HintSize="502,442" sap2010:WorkflowViewState.IdRef="NApplicationCard_14" InteractionMode="DebuggerApi" ScopeGuid="7fc05076-7976-42b9-9c18-32ad76918bea" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Access DQ Mapper'" sap:VirtualizedContainerService.HintSize="334,193" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7fc05076-7976-42b9-9c18-32ad76918bea" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.discovery.co.za/portal/car-and-home-insurance/stay-safe-improve-your-driving" CVScreenId="bb439277-52f1-4aaa-bbaa-91afedbce7b2" CvElementArea="125, 486, 190, 57" CvTextArea="142, 506, 155, 13" CvTextArgument="ACCESS DQ MAPPER" CvType="Button" DesignTimeRectangle="126, 488, 189, 53" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='A' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' type='button' class='btn btn-primary py-1' aaname='Access DQ Mapper' check:innerText='ACCESS DQ MAPPER' /&gt;" Guid="9dd71fd0-29e8-4c65-aea1-aa5585ea1b08" InformativeScreenshot="3a37c6a45fa21424fe05289359df8ae5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Track your vehicle in real-time with DQ Mapper - Anglo Medical Scheme' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="126, 382, 1110, 90" ElementType="List" FullSelectorArgument="&lt;webctrl parentid='main-container' tag='UL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='main-container' tag='UL' type='' class='' aaname='                                   ' /&gt;" Guid="371a289f-f5dc-4b3c-8778-e8af37eb23ff" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="1912, -8, 1376, 736" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIKSURBVDhPbVPPSxZRFJ1aBAW1biNBbVq3KRKhdm0CF0lQ0LvPoJX/gRmDifXNe0/LCBeCm3YShBTxzYw/EkSkRISEQBB0IdEiNIogir7OefNmvtG8cJj749z37r3vTnRQphu9J3Mjt1KjhzInjwnq9DEWaIcLSFcyp57lVpLMqkngY2ZlPTPqReb0U/ifkxPo+yU3ug8JD5CwALQC3gPzNXs5t+ohuSGtkNTpy6mRGIS9kpxa+fx27PapqbjnGOxPpR+XfM+MDDLHJy+N9BwvytZzbZJe9V8ni9Cn9/kII++Yw9wIN19HsFEFrZrgwey59LH3Vis6wqQ2TzeYC6IMwDEeAn+BLyj/PA9JjTIgWuozo71nEdsB/gTuOHMjkB8Vpcpa7uQSvl+BndlEnWMiBf12wLfF/puJdEFfYA5z6wesvI7vnWgm+gL0Xfi2Z+3dM/OJnIa9AfxsujtX/cz4OuUBUKoW0OurOI6PYnEuwv4GbALrwK+ZEbnm52BlCqi1cGCI7JtlZ4nqhP0DZf/GTd2+FW5n4FVDZEkgjKVW5VXQiGMl3Dr0fzO8wHAZ909ePqM/mYtk9X0EOcBwg7zh7vsLjLys+fdgx9UilcL1zJ3qB6G2uvgXjPrQtv30B/5b5VL4RKmT0WImagIJKwWo+zk9ISfQDxc+Jdq5wTJ934AvGT7GAi1IFP0DHZbYsXNGtEcAAAAASUVORK5CYII=" InformativeScreenshot="55080e233542397743eb5d4766b766fb.jpg" Selector="&lt;html app='msedge.exe' title='Track your vehicle in real-time with DQ Mapper - Anglo Medical Scheme' /&gt;" Title="Track your vehicle in real-time with DQ Mapper - Anglo Medical Scheme" Url="https://www.discovery.co.za/portal/car-and-home-insurance/stay-safe-improve-your-driving" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Edge: Index - Ctrack" sap:VirtualizedContainerService.HintSize="502,1201" sap2010:WorkflowViewState.IdRef="NApplicationCard_15" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="c1eebca8-1e3d-4d6d-a556-93b855dc3460" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,952" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,299" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                    <TryCatch.Try>
+                      <uix:NGetText DisplayName="Get Text 'JB 61 HF GP'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="c1eebca8-1e3d-4d6d-a556-93b855dc3460" TextString="[io_drive_data.Rows(io_drive_data.Rows.IndexOf(io_drive_data.AsEnumerable.Where(function(x) x(&quot;User&quot;).ToString.Equals(&quot;Stefan&quot;))(0)))(&quot;Distance&quot;)]" Version="V3">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="https://standalonedqmapper.dqmapper.co.za/#/reports/dashboards" CVScreenId="c60301bf-b604-4a92-aef0-bd60289d4db4" CvTextArea="336, 397, 22, 12" CvType="AnyWordGroup" DesignTimeRectangle="319, 639, 91, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='828' parentid='dashboard' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='dashboard' tag='SPAN' type='' class='smb-text-ellipsis ng-binding' /&gt;" Guid="f50daccc-6028-4b51-9a6d-a82408426e4f" InformativeScreenshot="e531b08be7a04a7a11ff8b49947007df.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Index - Ctrack' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="c60301bf-b604-4a92-aef0-bd60289d4db4" CvTextArea="193, 397, 71, 14" CvTextArgument="JB 61 HF GP" CvType="Text" DesignTimeRectangle="177, 639, 138, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='JB 61 HF GP' parentid='dashboard' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='JB 61 HF GP' parentid='dashboard' tag='SPAN' type='' class='smb-text-ellipsis ng-binding' check:innerText='JB 61 HF GP' /&gt;" Guid="b9a9263f-7124-461f-a3d2-7915fbae5047" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,105" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ActivityAction x:TypeArguments="s:Exception">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                          </ActivityAction.Argument>
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                  </TryCatch>
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,299" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                    <TryCatch.Try>
+                      <uix:NGetText DisplayName="Get Text 'KT09CLGP'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="c1eebca8-1e3d-4d6d-a556-93b855dc3460" TextString="[io_drive_data.Rows(io_drive_data.Rows.IndexOf(io_drive_data.AsEnumerable.Where(Function(x) x(&quot;User&quot;).ToString.Equals(&quot;Christiaan&quot;))(0)))(&quot;Distance&quot;)]" Version="V3">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="https://standalonedqmapper.dqmapper.co.za/#/reports/dashboards" CVScreenId="7a57d9a0-e2a5-4fcd-bd2f-c5ae9a7dc12f" CvTextArea="335, 460, 24, 12" CvType="AnyWordGroup" DesignTimeRectangle="336, 457, 91, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='407' parentid='dashboard' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='dashboard' tag='SPAN' type='' class='smb-text-ellipsis ng-binding' /&gt;" Guid="9645e683-0674-4459-9b7b-d890186e385d" InformativeScreenshot="e0e76ccb3a068c6560392c20a217498f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Index - Ctrack' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="7a57d9a0-e2a5-4fcd-bd2f-c5ae9a7dc12f" CvTextArea="193, 460, 62, 12" CvTextArgument="KT09CLGP" CvType="Text" DesignTimeRectangle="194, 457, 138, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='KT09CLGP' parentid='dashboard' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='KT09CLGP' parentid='dashboard' tag='SPAN' type='' class='smb-text-ellipsis ng-binding' check:innerText='KT09CLGP' /&gt;" Guid="2777557d-c2b0-47d4-b3ce-b132b2d35e8b" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,105" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ActivityAction x:TypeArguments="s:Exception">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                          </ActivityAction.Argument>
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                  </TryCatch>
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,292" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                    <TryCatch.Try>
+                      <uix:NGetText DisplayName="Get Text 'KV13PZGP'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="c1eebca8-1e3d-4d6d-a556-93b855dc3460" TextString="[io_drive_data.Rows(io_drive_data.Rows.IndexOf(io_drive_data.AsEnumerable.Where(Function(x) x(&quot;User&quot;).ToString.Equals(&quot;Derrick&quot;))(0)))(&quot;Distance&quot;)]" Version="V3">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="https://standalonedqmapper.dqmapper.co.za/#/reports/dashboards" CVScreenId="7a57d9a0-e2a5-4fcd-bd2f-c5ae9a7dc12f" CvTextArea="335, 478, 24, 12" CvType="AnyWordGroup" DesignTimeRectangle="336, 475, 91, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='316' parentid='dashboard' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='dashboard' tag='SPAN' type='' class='smb-text-ellipsis ng-binding' /&gt;" Guid="3415a902-56f9-4433-b466-17f89ac15c39" InformativeScreenshot="9407e7886f16c14c72c2bab951502c6d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Index - Ctrack' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="7a57d9a0-e2a5-4fcd-bd2f-c5ae9a7dc12f" CvTextArea="193, 478, 63, 12" CvTextArgument="KV13PZGP" CvType="Text" DesignTimeRectangle="194, 475, 138, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='KV13PZGP' parentid='dashboard' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='KV13PZGP' parentid='dashboard' tag='SPAN' type='' class='smb-text-ellipsis ng-binding' check:innerText='KV13PZGP' /&gt;" Guid="7c04f872-b2e3-46c2-985b-e47041c9199d" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,105" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ActivityAction x:TypeArguments="s:Exception">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                          </ActivityAction.Argument>
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                  </TryCatch>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="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" InformativeScreenshot="49c6528b340b26cf897a3ad8b642deac.jpg" Selector="&lt;html app='msedge.exe' title='Index - Ctrack' /&gt;" Title="Index - Ctrack" Url="https://standalonedqmapper.dqmapper.co.za/#/reports/dashboards" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[io_drive_data]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="502,350" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+            <ui:ForEachRow.Body>
+              <ActivityAction x:TypeArguments="sd:DataRow">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                </ActivityAction.Argument>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Distance: &quot; + CurrentRow(&quot;Distance&quot;).ToString + &quot;km&quot; + &quot; for User: &quot; + CurrentRow(&quot;User&quot;).ToString]" />
+              </ActivityAction>
+            </ui:ForEachRow.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:ForEachRow>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else - Nothing to Do" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_19">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </If.Else>
+    </If>
+  </Sequence>
+</Activity>
