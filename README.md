@@ -5,12 +5,10 @@
 
 Scrape data from Vitality Drive Dashboard and predict the month's drive status in Excel.
 
-![Vitality Drive Points - Laptop](img/image-1.png) \
+![Vitality Drive Points - Laptop](img/image-5.png) \
 *Figure: Vitality Drive Dashboard.*
-<!-- ![Vitality Drive Points - Phone](img/image-2.png)  \
-*Figure: Vitality Drive Dashboard.* -->
 
-![Excel Summary](img/image-3.png) \
+![Excel Summary](img/image-4.png) \
 *Figure: Drive Summary in Excel.*
 
 ### Approach
