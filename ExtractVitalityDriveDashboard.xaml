@@ -111,20 +111,20 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="672,3560" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence sap:VirtualizedContainerService.HintSize="672,3591" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="547,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Start - ExtractVitalityDriveDashboard&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Vitality Drive Dashboard - Anglo Medical" sap:VirtualizedContainerService.HintSize="547,2730" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="d440be1f-e90e-4e1c-b568-1fb198e8959b" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Vitality Drive Dashboard - Anglo Medical" sap:VirtualizedContainerService.HintSize="547,2761" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="d440be1f-e90e-4e1c-b568-1fb198e8959b" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do - Browser" sap:VirtualizedContainerService.HintSize="513,2481" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do - Browser" sap:VirtualizedContainerService.HintSize="513,2512" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -199,17 +199,17 @@
             </uix:NGetText>
             <uix:NGetText DisplayName="Get Text 'Last Month's Status'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="d440be1f-e90e-4e1c-b568-1fb198e8959b" TextString="[io_drive_row(&quot;LastMonthStatus&quot;)]" Version="V3">
               <uix:NGetText.Target>
-                <uix:TargetAnchorable BrowserURL="https://www.discovery.co.za/car-and-home-insurance/vitality-drive-dashboard" CVScreenId="5adc862e-2662-4fa6-88d4-17685f6f6e9e" CvTextArea="1055, 572, 76, 16" CvType="AnyWordGroup" DesignTimeRectangle="1057, 572, 73, 16" DesignTimeScaleFactor="1" ElementType="Text" Guid="aea81cd6-7202-4147-9375-43fc5adf0d81" InformativeScreenshot="17085e347dc18f2c09bd296e9abfd433.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Vitality Drive Dashboard - Anglo Medical Scheme' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+                <uix:TargetAnchorable BrowserURL="https://www.discovery.co.za/car-and-home-insurance/vitality-drive-dashboard" CVScreenId="07744c2e-f6ef-45a5-a1b7-cf03d07d2dad" CvTextArea="921, 672, 100, 9" CvType="AnyWordGroup" DesignTimeRectangle="923, 663, 137, 20" DesignTimeScaleFactor="0.6666666865348816" ElementType="Text" FullSelectorArgument="&lt;webctrl id='appIFrameObj' tag='IFRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl id='appIFrameObj' tag='IFRAME' /&gt;&lt;webctrl type='' tag='P' class='micro border-top-gray-mobile pt-1 hidden-desktop' /&gt;" Guid="af6b7c32-8963-4fbd-a625-56ce954ddf86" ImageBase64="" InformativeScreenshot="de2218f0e5c8b17e72a477c1335b64c7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Vitality Drive Dashboard - Anglo Medical Scheme' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
                     <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                      <uix:Target CVScreenId="5adc862e-2662-4fa6-88d4-17685f6f6e9e" CvTextArea="1013, 551, 118, 13" CvTextArgument="Last month's status:" CvType="Text" DesignTimeRectangle="1014, 551, 117, 13" ElementType="Text" Guid="15a8369e-ba9f-4135-88f1-6c617cb6faa7" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                      <uix:Target DesignTimeRectangle="923, 611, 137, 52" FullSelectorArgument="&lt;webctrl id='appIFrameObj' tag='IFRAME' /&gt;&lt;webctrl class='hidden-mobile' parentid='dashboardBean' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='appIFrameObj' tag='IFRAME' /&gt;&lt;webctrl class='hidden-mobile' parentid='dashboardBean' tag='DIV' type='' aaname='                                                                                                                                                                                                        ' check:innerText='Last month&amp;#xD;&amp;#xA;*' /&gt;" Guid="e4801ccb-c87c-4e30-8148-0f872c4450f1" SearchSteps="Selector, FuzzySelector" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NGetText.Target>
             </uix:NGetText>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Qualifying Spend = &quot; + io_drive_row(&quot;QualifyingSpend&quot;).ToString  + Environment.NewLine +&#xD;&#xA;&quot;Last Month's Status = &quot; + io_drive_row(&quot;LastMonthStatus&quot;).ToString]" />
-            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,303" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Qualifying Spend = &quot; + io_drive_row(&quot;QualifyingSpend&quot;).ToString  + Environment.NewLine +&#xD;&#xA;io_drive_row(&quot;LastMonthStatus&quot;).ToString]" />
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,334" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
@@ -258,6 +258,14 @@
                     </ui:AssignOperation.To>
                     <ui:AssignOperation.Value>
                       <InArgument x:TypeArguments="x:Object">[io_drive_row("DistancePoints").ToString.Split("/"c)(0)]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Object">[io_drive_row("LastMonthStatus")]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Object">[io_drive_row("LastMonthStatus").ToString.Split(":"c)(1).Trim()]</InArgument>
                     </ui:AssignOperation.Value>
                   </ui:AssignOperation>
                 </scg:List>
